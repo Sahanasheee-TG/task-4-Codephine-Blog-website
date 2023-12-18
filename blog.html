@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="blog.css">
+    </head>
+    <body>
+        <div class="logo">
+            <h1>Blogger</h1>
+        </div>
+            <div class="search">
+                <button type="submit">Search</button>
+                <input type="text" name="name">
+            </div>
+            <h1 class="h">Latest Posts</h1>
+        <div class="main">
+            <section>
+               <article>
+                    <h3>Post Title</h3>
+                    <p>Post Content goes here.</p>
+                </article>
+            </section>
+
+            <section>
+                <h2>Write a new post</h2>
+                <form action="submit_post.php" method="post">
+                    <label for="postTitle">Title:</label>
+                    <input type="text" id="postTitle" name="postTitle" required>
+
+                    <label for="postContent">Content:</label>
+                    <textarea id="postContent" name="postContent" required></textarea>
+
+                    <button type="submit">Publish Post</button>
+                </form>
+            </section> 
+        </div>
+
+        <footer>
+            <p>&copy; 2023 Your Blog</p>
+        </footer>
+    </body>
+</html>
